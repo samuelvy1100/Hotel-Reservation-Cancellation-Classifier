@@ -33,7 +33,7 @@
 
 **Data Input**
 - Imported the hotel bookings dataset via the **File** widget (CSV format).
-- Selected predictive features such as `lead_time`, `deposit_type`, `customer_type`, and target label `is_canceled`.
+- Target label `is_canceled`.
 
 **Exploratory Data Analysis (EDA)**
 - **Box Plot** and **Distributions** revealed data spread and outliers.
@@ -47,17 +47,16 @@
 - Connected to **Test & Score** using 5-fold cross-validation.
 
 **Evaluation**
-- **Accuracy**: ~87%  
+- **Accuracy**: 87%  
 - **F1 Score**, **Precision**, **Recall**, and **AUC-ROC** indicated robust model performance.  
 - **Confusion Matrix** identified cancellation prediction reliability.
 - **ROC Analysis** provided a graphical view of class separability.
 
 **Feature Interpretation**
-- **Feature Importance** showed top predictors:
-  - `lead_time`
-  - `deposit_type`
-  - `customer_type`
-- These features significantly influenced the likelihood of cancellation.
+- **Feature Importance** showed top predictors that significantly influenced the likelihood of cancellation:
+  - `lead_time`: Longer lead times (booking far in advance) are strongly linked to cancellations.
+  - `no_of_special_requests`: Fewer requests may indicate lower engagement/intent to complete booking.
+  - `avg_price_per_room`: Price sensitivity could impact cancellation behavior, especially in volatile markets.
 
 ---
 
@@ -69,12 +68,8 @@
 - Balanced prediction metrics across both classes, indicating minimal bias.
 
 **Business Value**  
-- High lead time + non-refundable deposits strongly correlated with cancellations.
+- High lead time + fewer client engagement + room price sensitivity strongly correlated with cancellations.
 - Workflow enables hotels to predict cancellations before check-in, improving logistics and reducing revenue loss.
-
-**Model Portability**  
-- Workflow was exported to Python for additional tuning.
-- Achieved a 15% reduction in Mean Absolute Error (MAE) after export.
 
 ---
 
@@ -84,7 +79,6 @@
 |------------------|----------------------------------------|
 | Orange 3.98       | No-code visual ML interface            |
 | scikit-learn     | Model training and evaluation backend  |
-| Python| Advanced model tuning after export     |
 
 ---
 
@@ -96,11 +90,13 @@
 
 ---
 
-#### 💻 Interace
+#### 💻 Program
 <br/>
 <img src="https://i.imgur.com/y59fRkK.png" width="1000" alt="Application Page 1"/>
-<br />
-<br />
+<img src="https://i.imgur.com/rsrqkke.png" width="1000" alt="Application Page 1"/>
+<img src="https://i.imgur.com/CwwWARh.png" width="1000" alt="Application Page 1"/>
+<img src="https://i.imgur.com/rhMSttQ.png" width="1000" alt="Application Page 1"/>
+<img src="https://i.imgur.com/iQTd7Zt.png" width="1000" alt="Application Page 1"/>
 
 ---
 
