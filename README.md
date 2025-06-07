@@ -7,11 +7,11 @@
 ---
 ### 📚 Overview
 
-- **Objective**  
-Develop a visual machine learning pipeline using Orange Data Mining to predict hotel reservation cancellations. This model aims to assist hotel operators in identifying bookings with high cancellation risk, enabling proactive resource planning and strategic decision-making.
+**Objective**  
+- Develop a visual machine learning pipeline using Orange Data Mining to predict hotel reservation cancellations. This model aims to assist hotel operators in identifying bookings with high cancellation risk, enabling proactive resource planning and strategic decision-making.
 
 **Toolkit**  
-- **Platform**: Orange Data Mining 3.x  
+- **Platform**: Orange Data Mining 3.98 
 - **Method**: Visual programming with drag-and-drop widgets  
 - **ML Algorithm**: Random Forest Classifier  
 - **Backend**: scikit-learn (underlying engine for model execution)  
@@ -82,7 +82,7 @@ Develop a visual machine learning pipeline using Orange Data Mining to predict h
 
 | Technology       | Purpose                               |
 |------------------|----------------------------------------|
-| Orange 3.x       | No-code visual ML interface            |
+| Orange 3.98       | No-code visual ML interface            |
 | scikit-learn     | Model training and evaluation backend  |
 | Python| Advanced model tuning after export     |
 
