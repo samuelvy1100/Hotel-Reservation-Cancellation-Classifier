@@ -63,7 +63,7 @@
 ### 🎯 Results & Takeaways
 
 **Performance**  
-- **Accuracy**: ~87%  
+- **Accuracy**: 87%  
 - **AUC-ROC**: >0.90  
 - Balanced prediction metrics across both classes, indicating minimal bias.
 
